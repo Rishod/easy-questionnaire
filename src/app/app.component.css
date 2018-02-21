@@ -1,0 +1,10 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.row-retreat-top{
+  margin-top: 45px;
+}
+
+.navbar-style{
+  background-color: #3b547e;
+  height: 100px;
+}

@@ -1,4 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
 body{
   background-color: #f1f4f9;
+}
+
+.table{
+  border: 2px solid #e1e1e1;
+  height: 500px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #ffffff;
+}
+
+.list-group-flush:last-child{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.list-group-flush:first-child{
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
 }

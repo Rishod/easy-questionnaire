@@ -10,6 +10,7 @@ import { MailTableComponent } from './component/mail-table/mail-table.component'
 import { QuestionnaireTemplateItemComponent } from './component/questionnaire-template-item/questionnaire-template-item.component';
 import { ButtonComponent } from './component/button/button.component';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import { QuestionnaireItemComponent } from './component/questionnaire-item/questionnaire-item.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {NoopAnimationsModule} from '@angular/platform-browser/animations';
     QuestionnaireTableComponent,
     MailTableComponent,
     QuestionnaireTemplateItemComponent,
-    ButtonComponent
+    ButtonComponent,
+    QuestionnaireItemComponent
   ],
   imports: [
     BrowserModule,

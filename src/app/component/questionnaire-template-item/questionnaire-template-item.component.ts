@@ -1,4 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Inject, Input, OnInit} from '@angular/core';
+import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-questionnaire-template-item',
@@ -10,10 +11,43 @@ export class QuestionnaireTemplateItemComponent implements OnInit {
   @Input('title')
   title: string;
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
     this.title = 'none';
+  }
+
+  openModalToSend() {
+    const modalData = {
+      width: '400px',
+      height: 'auto',
+      data: {
+        id: 1,
+        name: 'Qname',
+        email: ''
+      }
+    };
+    this.dialog.open(SendDialogComponent, modalData);
+  }
+
+}
+
+@Component({
+  selector: 'app-send-dialog',
+  templateUrl: './dialog-send-questionnaire.html'
+})
+export class SendDialogComponent {
+
+  constructor(
+    public dialogRef: MatDialogRef<SendDialogComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any
+  ) { }
+
+  onClose() {
+    this.dialogRef.close();
+  }
+
+  send() {
   }
 
 }

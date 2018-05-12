@@ -3,7 +3,7 @@
     {{title}}
   </span>
   <div>
-    <app-button [name]="'Send'"></app-button>
+    <app-button [name]="'Send'" (action)="openModalToSend()"></app-button>
     <app-button [name]="'Edit'"></app-button>
     <app-button [name]="'Delete'"></app-button>
   </div>

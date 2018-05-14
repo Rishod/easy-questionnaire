@@ -14,7 +14,6 @@ export class QuestionnaireTemplateItemComponent implements OnInit {
   constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
-    this.title = 'none';
   }
 
   openModalToSend() {

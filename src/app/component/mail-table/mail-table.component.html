@@ -5,4 +5,38 @@
     </h4>
   </div>
 
+  <div style="margin: 15px">
+    <mat-table #table [dataSource]="dataSource" >
+
+      <ng-container matColumnDef="Date">
+        <mat-header-cell *matHeaderCellDef>Date</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.sentOn}}</mat-cell>
+      </ng-container>
+
+
+      <ng-container matColumnDef="Subject">
+        <mat-header-cell *matHeaderCellDef>Subject</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.subject}}</mat-cell>
+      </ng-container>
+
+
+      <ng-container matColumnDef="To">
+        <mat-header-cell *matHeaderCellDef>To</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.to}}</mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns" class="mail-table-header"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+    </mat-table>
+  </div>
+
+
+  <!--<div style="margin: 15px">-->
+    <!--<ul class="list-group list-group-flush">-->
+      <!--<app-mail-item [subject]="'sad'" class="list-item list-group-item"></app-mail-item>-->
+      <!--<app-mail-item [subject]="'dsfr'" class="list-item list-group-item"></app-mail-item>-->
+      <!--<app-mail-item [subject]="'sadhkl'" class="list-item list-group-item"></app-mail-item>-->
+    <!--</ul>-->
+  <!--</div>-->
+
 </div>

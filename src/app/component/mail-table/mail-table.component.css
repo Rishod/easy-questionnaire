@@ -1,4 +1,4 @@
-.mail-conteiner{
-  display: flex;
-  flex-direction: column;
+.mail-table-header {
+  background: lightgray;
 }
+

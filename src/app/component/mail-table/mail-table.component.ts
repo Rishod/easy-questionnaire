@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MatTableDataSource} from '@angular/material';
 
 @Component({
   selector: 'app-mail-table',
@@ -8,11 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class MailTableComponent implements OnInit {
 
   displayedColumns = ['Date', 'To', 'Subject'];
-  dataSource = DATA;
+  dataSource = new MatTableDataSource(DATA);
+
   constructor() { }
 
   ngOnInit() {
   }
+
 
 }
 

@@ -15,12 +15,13 @@ import { ButtonComponent } from './component/button/button.component';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { QuestionnaireItemComponent } from './component/questionnaire-item/questionnaire-item.component';
 import { MailItemComponent } from './component/mail-item/mail-item.component';
-import {MatTableModule} from '@angular/material';
+import {MatTableModule} from '@angular/material/table';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material';
 import {FormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material';
+import {CdkTableModule} from '@angular/cdk/table';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import {MatInputModule} from '@angular/material';
   ],
   entryComponents: [QuestionnaireTemplateItemComponent, SendDialogComponent],
   imports: [
+    CdkTableModule,
     BrowserModule,
     NoopAnimationsModule,
     MatTableModule,

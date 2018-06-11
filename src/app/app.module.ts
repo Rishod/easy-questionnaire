@@ -22,6 +22,7 @@ import {FormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material';
 import {CdkTableModule} from '@angular/cdk/table';
+import { MailTemplateItemComponent } from './component/mail-template-item/mail-template-item.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import {CdkTableModule} from '@angular/cdk/table';
     ButtonComponent,
     QuestionnaireItemComponent,
     MailItemComponent,
-    SendDialogComponent
+    SendDialogComponent,
+    MailTemplateItemComponent
   ],
   entryComponents: [QuestionnaireTemplateItemComponent, SendDialogComponent],
   imports: [

@@ -27,6 +27,5 @@ export interface Mail {
 }
 
 const DATA: Mail[] = [
-  {id: 1, to: 'Vlad', subject: 'Please complete my questionnaire', sentOn: '03.11.2017'},
-  {id: 1, to: 'Yaryna', subject: 'Sub2', sentOn: '23.01.2018'},
+  {id: 1, to: 'Vlad', subject: 'Please complete my questionnaire', sentOn: '03.01.2018'},
   ];
